@@ -55,12 +55,10 @@ from unicrypto.hashlib import sha1 as SHA
 from unicrypto.hashlib import md4
 from unicrypto.pbkdf2 import pbkdf2 as PBKDF2
 from unicrypto.symmetric import MODE_CBC, MODE_ECB
-from unicrypto.symmetric import DES 
-from unicrypto.symmetric import TDES as DES3 #, MODE_CBC, MODE_ECB
-from unicrypto.symmetric import RC4 as ARC4
-from unicrypto.symmetric import DES
-from unicrypto.symmetric import AES
-
+from unicrypto.backends.pure.RC4 import RC4 as ARC4
+from unicrypto.backends.pure.DES import DES
+from unicrypto.backends.pure.AES import AES
+from unicrypto.backends.pure.TDES import TDES as DES3
 
 
 def get_random_bytes(lenBytes):
