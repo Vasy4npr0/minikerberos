@@ -1,4 +1,4 @@
-from unicrypto.symmetric import RC4 as ARC4
+from unicrypto.backends.pure.RC4 import RC4 as ARC4
 from unicrypto import hmac as HMAC
 from unicrypto.hashlib import md5 as MD5
 from tqdm import tqdm
