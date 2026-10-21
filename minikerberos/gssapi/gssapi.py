@@ -6,7 +6,7 @@ from minikerberos.protocol.constants import EncryptionType
 from minikerberos.protocol import encryption
 from unicrypto.hashlib import md5
 from unicrypto import hmac #, hmac_md5
-from unicrypto.symmetric import RC4
+from unicrypto.backends.pure.RC4 import RC4
 
 # https://tools.ietf.org/html/draft-raeburn-krb-rijndael-krb-05
 # https://tools.ietf.org/html/rfc2478
